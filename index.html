@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Portifolio Website</title>
 </head>
 <body>
     <nav class="navegacao">
         <ul class="menu">
             <li>
-                <a href="#inicio">Início</a>
+                <a href="#inicio" class="menu-link">Início</a>
             </li>
              <li>
-                <a href="#sobre">Sobree</a>
+                <a href="#sobre" class="menu-link">Sobre</a>
             </li>
              <li>
-                <a href="projetos">Projetos</a>
+                <a href="#projetos" class="menu-link">Projetos</a>
             </li>
              <li>
-                <a href="contato">Contato</a>
+                <a href="#contato" class="menu-link">Contato</a>
             </li>
         </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
         <div>
-            <img src="imagens/isadodora.JPG" alt="Isadora-Kairala" class="foto-perfil">
+            <img src="imagens/eu.jpg" alt="Isadora-Kairala" class="foto-perfil">
             <h1>Isadora Kairala</h1>
             <p> Desenvolvedora Fullstack</p>
         </div>
@@ -43,7 +44,7 @@
     </section>
 
     <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">
+        <h2 class="projetos-titulo">   </h2>
             <div class="projetos-caixa">
 
                 <div class="projetos-card">
@@ -64,13 +65,25 @@
                     <p class="paragrafo-projetos">Painel de sons do Ratinho com botões interativos</p>
                 </div>                                               
 
-                
-                
+            
             </div>
-        </h2>
-
+    
     </section>
 
+    <section id="contato"  class="contatos" >
+        <h2 class="contatos-titulo">Contatos</h2>
+
+        <form class="formulario-contato" id="formulario">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="grupo-form">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="grupo-form" placeholder="Digite sua Mensagem" ></textarea>
+            </div>
+
+        </form>
+    </section>
     
 </body>
 </html>
